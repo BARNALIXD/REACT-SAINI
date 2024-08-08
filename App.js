@@ -2,31 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-// normal element creation
-const heading = (
-<h1 className='heading'>
+const Title = () => (
+<h1 className='heading' tabIndex={5}>
     Namaste reading using JSX
     </h1>
     );
 
 
-//this is know as short hand rule for function
-    const fn = () => {
-        return true;
-    }
-    const fn2 = () =>  true;
-
-
-
-
-    // React Functional components
-    const Headingcomponent = () => {
-        return <h1>Namaste react functional</h1>
-    };
-    
-    // or this:
-    const HeadingComponent2 = () =>  (
+ const HeadingComponent = () =>  (
         <div id='container'>
+            <Title/>
             <h1 className='heading'>Namaste react functional components</h1>
         </div>
     );
@@ -35,7 +20,7 @@ const heading = (
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading); // this is how you render elements 
-root.render(<HeadingComponent2/>); // this is how you render components
+
+root.render(<HeadingComponent/>); // this is how you render components
  
 
