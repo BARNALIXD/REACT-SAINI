@@ -21,7 +21,7 @@ const heading = (
 
     // React Functional components
     const Headingcomponent = () => {
-        return <h1>Namaste react functional components</h1>
+        return <h1>Namaste react functional</h1>
     };
     
     // or this:
@@ -35,6 +35,7 @@ const heading = (
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(heading); // this is how you render elements 
+root.render(<HeadingComponent2/>); // this is how you render components
  
 
