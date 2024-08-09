@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-
-const Title = () => (
+//Element:
+const title = () => (
 <h1 className='heading' tabIndex={5}>
     Namaste reading using JSX
     </h1>
@@ -10,8 +10,10 @@ const Title = () => (
 
 
  const HeadingComponent = () =>  (
-        <div id='container'>
-            <Title/>
+    
+            <div id='container'>
+                <h2> {title} </h2> 
+                //this is element included inside another components
             <h1 className='heading'>Namaste react functional components</h1>
         </div>
     );
